@@ -23,6 +23,16 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Fingerprint -->
+    <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Motor -->
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.motor</name>
