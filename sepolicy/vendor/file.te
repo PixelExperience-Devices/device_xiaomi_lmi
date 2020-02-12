@@ -12,3 +12,5 @@ type sysfs_touchpanel, fs_type, sysfs_type;
 
 # Persist camera file
 type camera_persist_file, file_type, data_file_type;
+
+type per_boot_file, file_type, data_file_type, core_data_file_type;
