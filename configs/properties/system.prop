@@ -1,4 +1,5 @@
 # Camera
+persist.camera.gyro.disable=0
 persist.vendor.camera.privapp.list=com.android.camera
 
 # Charger
