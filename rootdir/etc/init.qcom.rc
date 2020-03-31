@@ -216,6 +216,10 @@ on boot
     chown system system /sys/class/sensors/apds9930-proximity/enable
     chown system system /sys/class/sensors/apds9930-proximity/poll_delay
 
+    # Allow system to modify exposure adjustment state
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+
     # Create directory used for display
     # for backward compatibility
     mkdir /persist/display 0770 system graphics
