@@ -53,7 +53,6 @@ class Power : public ::aidl::android::hardware::power::BnPower {
   private:
     std::shared_ptr<AdaptiveCpu> mAdaptiveCpu;
     std::unique_ptr<InteractionHandler> mInteractionHandler;
-    std::atomic<bool> mVRModeOn;
     std::atomic<bool> mSustainedPerfModeOn;
 };
 
