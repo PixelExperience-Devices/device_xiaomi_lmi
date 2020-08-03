@@ -21,4 +21,6 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <!-- Whether to show Battery Health in Settings Option -->
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
