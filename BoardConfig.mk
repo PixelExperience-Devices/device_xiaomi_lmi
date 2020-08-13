@@ -69,6 +69,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Fingerprint
 TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.xiaomi_lmi
+TARGET_USES_FOD_ZPOS := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
