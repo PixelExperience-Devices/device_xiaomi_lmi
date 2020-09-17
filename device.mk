@@ -79,6 +79,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Bluetooth
 include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
+
+BOARD_HAVE_QCOM_FM := false
+
 $(call inherit-product-if-exists, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
 
 PRODUCT_PACKAGES += \
