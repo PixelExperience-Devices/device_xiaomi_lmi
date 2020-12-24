@@ -69,4 +69,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Fastcharge -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.fastcharge</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
