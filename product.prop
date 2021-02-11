@@ -16,3 +16,5 @@ ro.product.manufacturer=Google
 ro.product.model=Pixel 6 Pro
 ro.product.name=raven
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
