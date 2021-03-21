@@ -143,11 +143,13 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
+    FrameworksResTarget \
     LmiFrameworks \
     LmiSystemUI \
     SystemUIResCommon \
     TelephonyResCommon \
-    WifiResCommon
+    WifiResCommon \
+    WifiResTarget
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
