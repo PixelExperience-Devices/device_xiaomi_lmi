@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     LmiFrameworks \
+    LmiSystemUI \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon
