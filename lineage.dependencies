@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_vendor_xiaomi_lmi",
+    "target_path": "vendor/xiaomi/lmi"
+  }
+  {
+    "repository": "android_kernel_xiaomi_lmi",
+    "target_path": "kernel/xiaomi/lmi"
+  }
+]
