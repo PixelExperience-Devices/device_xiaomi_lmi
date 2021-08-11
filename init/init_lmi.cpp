@@ -18,9 +18,6 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-using android::base::GetProperty;
-using std::string;
-
 std::vector<std::string> ro_props_default_source_order = {
     "",
     "odm.",
@@ -95,8 +92,8 @@ void vendor_load_properties() {
     char const fp[] = "Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.1.0.SJKCNXM:user/release-keys";
     char const fp_desc[] = "lmi-user 12 RKQ1.211001.001 V14.0.1.0.SJKCNXM release-keys";
 
-    string region = android::base::GetProperty("ro.boot.hwc", "");
-    string product = android::base::GetProperty("ro.boot.product.hardware.sku", "");
+    std::string region = android::base::GetProperty("ro.boot.hwc", "");
+    std::string product = android::base::GetProperty("ro.boot.product.hardware.sku", "");
 
     if (region == "CN") {
         if (product == "pro") {
