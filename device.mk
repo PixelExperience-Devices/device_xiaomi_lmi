@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     fstab.ramdisk \
 
 # Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Shipping API level
