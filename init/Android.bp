@@ -60,6 +60,13 @@ sh_binary {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.xiaomi.rc",
+    src: "init.xiaomi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
 cc_library_static {
     name: "libinit_lmi",
     srcs: ["init_lmi.cpp"],
