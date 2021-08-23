@@ -132,6 +132,13 @@ TARGET_BOARD_PLATFORM := kona
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
