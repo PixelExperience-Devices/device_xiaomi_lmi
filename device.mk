@@ -88,8 +88,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.ramdisk \
+    init.class_main.sh \
+    init.mdm.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sh \
     init.qti.dcvs.sh \
-    init.target.rc
+    init.recovery.qcom.rc \
+    init.target.rc\
+    ueventd.qcom.rc
 
 # IR
 PRODUCT_PACKAGES += \
