@@ -4080,9 +4080,6 @@ case "$target" in
         # Enable conservative pl
         echo 1 > /proc/sys/kernel/sched_conservative_pl
 
-        echo "0:1248000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-        echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-
         # Set Memory parameters
         configure_memory_parameters
 
