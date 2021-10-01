@@ -59,8 +59,7 @@ void load_dalvik_properties() {
     property_override("dalvik.vm.heapminfree", "8m");
 }
 
-void set_device_props(const std::string fingerprint, const std::string description,
-        const std::string brand, const std::string device, const std::string model) {
+void set_device_props(const std::string brand, const std::string device, const std::string model) {
     const auto set_ro_build_prop = [](const std::string &source,
                                       const std::string &prop,
                                       const std::string &value) {
@@ -76,41 +75,26 @@ void set_device_props(const std::string fingerprint, const std::string descripti
     };
 
     for (const auto &source : ro_props_default_source_order) {
-        set_ro_build_prop(source, "fingerprint", fingerprint);
         set_ro_product_prop(source, "brand", brand);
         set_ro_product_prop(source, "device", device);
         set_ro_product_prop(source, "model", model);
     }
-
-    property_override("ro.build.fingerprint", fingerprint.c_str());
-    property_override("ro.build.description", description.c_str());
-    property_override("ro.bootimage.build.fingerprint", fingerprint.c_str());
-    property_override("ro.system_ext.build.fingerprint", fingerprint.c_str());
 }
 
 void vendor_load_properties() {
-    char const fp[] = "Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.1.0.SJKCNXM:user/release-keys";
-    char const fp_desc[] = "lmi-user 12 RKQ1.211001.001 V14.0.1.0.SJKCNXM release-keys";
-
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
     std::string product = android::base::GetProperty("ro.boot.product.hardware.sku", "");
 
     if (region == "CN") {
         if (product == "pro") {
             set_device_props(
-                fp,
-                fp_desc,
                 "Redmi", "lmipro", "Redmi K30 Pro Zoom Edition");
         } else {
             set_device_props(
-                fp,
-                fp_desc,
                 "Redmi", "lmi", "Redmi K30 Pro");
         }
     } else {
         set_device_props(
-            fp,
-            fp_desc,
             "POCO", "lmi", "POCO F2 Pro");
     }
 
