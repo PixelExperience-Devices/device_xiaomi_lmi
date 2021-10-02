@@ -11,11 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# Inherit Nusantara build
+NAD_BUILD_TYPE := OFFICIAL
+USE_GAPPS ?= true
+USE_AOSP_CLOCK := true
+USE_PIXEL_CHARGING := true
+TARGET_USES_BLUR := true
+TARGET_FOD_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_lmi
+PRODUCT_NAME := nad_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 Pro
