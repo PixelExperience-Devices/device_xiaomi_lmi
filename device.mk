@@ -246,6 +246,7 @@ PRODUCT_PACKAGES += \
     fstab.ramdisk \
     init.class_main.sh \
     init.mdm.sh \
+    init.mi.usb.sh \
     init.performance_level.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
