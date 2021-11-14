@@ -3,13 +3,13 @@
     "remote"       : "github",
     "repository"   : "NusantaraROM-Devices/vendor_xiaomi_lmi",
     "target_path"  : "vendor/xiaomi/lmi",
-    "branch"       : "11"
+    "branch"       : "12"
   },
   {
     "remote"       : "github",
     "repository"   : "NusantaraROM-Devices/kernel_xiaomi_lmi",
     "target_path"  : "kernel/xiaomi/lmi",
     "clone-depth"  : "1",
-    "branch"       : "11"
+    "branch"       : "12"
   }
 ]
