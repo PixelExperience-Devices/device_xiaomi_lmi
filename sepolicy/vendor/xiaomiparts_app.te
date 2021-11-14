@@ -1,3 +1,5 @@
+type xiaomiparts_app, domain;
+
 app_domain(xiaomiparts_app)
 
 hal_client_domain(xiaomiparts_app, hal_motor)
