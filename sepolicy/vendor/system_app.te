@@ -3,4 +3,6 @@ allow system_app vendor_persist_camera_prop:file { read };
 allow system_app vendor_sysfs_battery_supply:dir { search };
 allow system_app vendor_sysfs_battery_supply:file { getattr open read };
 
+binder_call(system_app, hal_motor)
+
 r_dir_file(system_app, vendor_sysfs_battery_supply)
