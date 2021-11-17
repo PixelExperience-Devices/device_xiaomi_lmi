@@ -789,7 +789,6 @@ vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/libhdr_tm.so
 
 # Graphics (SDM)
-vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
