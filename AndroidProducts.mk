@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_lmi.mk
+    $(LOCAL_DIR)/aosp_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_lmi-userdebug \
-    nad_lmi-eng
+    aosp_lmi-userdebug \
+    aosp_lmi-eng
