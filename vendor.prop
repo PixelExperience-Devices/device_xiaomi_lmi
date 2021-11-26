@@ -95,6 +95,9 @@ vendor.voice.path.for.pcm.voip=true
 # Bluetooth
 persist.vendor.qcom.bluetooth.soc=hastings
 
+# Blur
+ro.surface_flinger.supports_background_blur=1
+
 # Camera
 camera.disable_zsl_mode=true
 persist.camera.gyro.disable=0
