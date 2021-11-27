@@ -1,0 +1,21 @@
+allow flags_health_check ab_update_gki_prop:file { getattr open map };
+allow flags_health_check aac_drc_prop:file { getattr open map};
+allow flags_health_check adbd_config_prop:file { getattr open };
+# allow flags_health_check adbd_prop:file { getattr open };
+allow flags_health_check apexd_config_prop:file { getattr open map };
+allow flags_health_check apexd_prop:file { getattr open };
+allow flags_health_check bootanim_system_prop:file { getattr open map };
+allow flags_health_check bootloader_boot_reason_prop:file { getattr open };
+allow flags_health_check boottime_prop:file { getattr open };
+allow flags_health_check charger_config_prop:file { getattr open map };
+allow flags_health_check charger_prop:file { getattr open };
+allow flags_health_check charger_status_prop:file { getattr open };
+allow flags_health_check ctl_fuse_prop:file { getattr open };
+allow flags_health_check ctl_gsid_prop:file { getattr open map };
+allow flags_health_check ctl_interface_restart_prop:file { getattr open map };
+allow flags_health_check ctl_interface_start_prop:file { getattr open };
+allow flags_health_check dck_prop:file { getattr open };
+allow flags_health_check debugfs_restriction_prop:file { getattr open };
+allow flags_health_check device_logging_prop:file { getattr open };
+
+
