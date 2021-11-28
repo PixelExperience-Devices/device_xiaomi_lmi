@@ -56,7 +56,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <integer name="config_udfpsEnrollProgressBar" translatable="false">100</integer>
 
     <!-- Color of the FOD view -->
-    <color name="config_udfpsColor">#00ffffff</color>
+    <color name="config_udfpsColor">#ffffffff</color>
 
     <!-- HBM type of UDFPS overlay.
             0 - GLOBAL HBM
