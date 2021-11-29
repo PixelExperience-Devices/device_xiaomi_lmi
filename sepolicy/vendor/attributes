@@ -4,3 +4,6 @@ attribute hal_touchfeature_server;
 attribute hal_motor;
 attribute hal_motor_client;
 attribute hal_motor_server;
+attribute hal_mlipay;
+attribute hal_mlipay_server;
+attribute hal_mlipay_client;
