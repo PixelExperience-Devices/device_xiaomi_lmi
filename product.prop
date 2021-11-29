@@ -7,3 +7,12 @@ audio.sys.noisy.broadcast.delay=500
 audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
 ro.af.client_heap_size_kbyte=7168
+
+# Pixel Mask
+ro.build.fingerprint=google/raven/raven:12/SD1A.210817.037/7862242:user/release-keys
+ro.product.brand=google
+ro.product.device=raven
+ro.product.manufacturer=Google
+ro.product.model=Pixel 6 Pro
+ro.product.name=raven
+

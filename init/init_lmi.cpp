@@ -89,8 +89,8 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 }
 
 void vendor_load_properties() {
-    char const fp[] = "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.5.2.0.RJKCNXM:user/release-keys";
-    char const fp_desc[] = "lmi-user 11 RKQ1.200826.002 V12.5.2.0.RJKCNXM release-keys";
+    char const fp[] = "google/raven/raven:12/SD1A.210817.037/7862242:user/release-keys";
+    char const fp_desc[] = "raven-user 12 SD1A.210817.037 7862242 release-keys";
 
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
     std::string product = android::base::GetProperty("ro.boot.product.hardware.sku", "");
@@ -100,18 +100,13 @@ void vendor_load_properties() {
             set_device_props(
                 fp,
                 fp_desc,
-                "Redmi", "lmipro", "Redmi K30 Pro Zoom Edition");
-        } else {
-            set_device_props(
-                fp,
-                fp_desc,
-                "Redmi", "lmi", "Redmi K30 Pro");
-        }
+                "Google", "raven", "Pixel 6 Pro");
     } else {
         set_device_props(
             fp,
             fp_desc,
-            "POCO", "lmi", "POCO F2 Pro");
+            "Google", "raven", "Pixel 6 Pro");
+    }
     }
 
     load_dalvik_properties();
