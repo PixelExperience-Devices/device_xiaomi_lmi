@@ -89,8 +89,8 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 }
 
 void vendor_load_properties() {
-    char const fp[] = "google/raven/raven:12/SD1A.210817.037/7862242:user/release-keys";
-    char const fp_desc[] = "raven-user 12 SD1A.210817.037 7862242 release-keys";
+    char const fp[] = "google/raven/raven:12/SQ1D.211205.017/7955197:user/release-keys";
+    char const fp_desc[] = "raven-user 12 SQ1D.211205.017 7955197 release-keys";
 
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
     std::string product = android::base::GetProperty("ro.boot.product.hardware.sku", "");
