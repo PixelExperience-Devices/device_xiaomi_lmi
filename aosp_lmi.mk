@@ -17,6 +17,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit PixelExtended build
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier. This must come after all inclusions.
