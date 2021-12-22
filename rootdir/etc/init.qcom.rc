@@ -78,6 +78,9 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # Some user code relies on ro.boot.hardware.revision
+    setprop ro.boot.hardware.revision ${ro.boot.hwlevel}${ro.boot.hwversion}
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
