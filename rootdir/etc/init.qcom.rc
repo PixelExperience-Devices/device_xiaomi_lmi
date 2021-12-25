@@ -81,6 +81,12 @@ on init
     # Some user code relies on ro.boot.hardware.revision
     setprop ro.boot.hardware.revision ${ro.boot.hwlevel}${ro.boot.hwversion}
 
+on late-fs
+    start surfaceflinger
+    start bootanim
+    start vendor.qti.hardware.display.composer
+    start vendor.qti.hardware.display.allocator
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
