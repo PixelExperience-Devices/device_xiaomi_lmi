@@ -181,27 +181,6 @@ static int set_rgb_led_brightness(enum rgb_led led, int brightness)
     return write_int(file, brightness);
 }
 
-static int set_rgb_led_timer_trigger(enum rgb_led led, int onMS, int offMS)
-{
-    char file[48];
-    int rc;
-
-    snprintf(file, sizeof(file), "/sys/class/leds/%s/delay_off", led_names[led]);
-    rc = write_int(file, offMS);
-    if (rc < 0)
-        goto out;
-
-    snprintf(file, sizeof(file), "/sys/class/leds/%s/delay_on", led_names[led]);
-    rc = write_int(file, onMS);
-    if (rc < 0)
-        goto out;
-
-    return 0;
-out:
-    ALOGD("%s doesn't support timer trigger\n", led_names[led]);
-    return rc;
-}
-
 static int set_rgb_led_hw_blink(enum rgb_led led, int blink)
 {
     char file[48];
@@ -240,22 +219,14 @@ set_speaker_light_locked(struct light_device_t* dev,
 
     switch (state->flashMode) {
         case LIGHT_FLASH_HARDWARE:
+            blink = 1;
+        case LIGHT_FLASH_TIMED:
             if (!!red)
                 rc = set_rgb_led_hw_blink(LED_RED, blink);
             if (!!green)
                 rc |= set_rgb_led_hw_blink(LED_GREEN, blink);
             if (!!blue)
                 rc |= set_rgb_led_hw_blink(LED_BLUE, blink);
-            /* fallback to timed blinking if breath is not supported */
-            if (rc == 0)
-                break;
-        case LIGHT_FLASH_TIMED:
-            if (!!red)
-                rc = set_rgb_led_timer_trigger(LED_RED, onMS, offMS);
-            if (!!green)
-                rc |= set_rgb_led_timer_trigger(LED_GREEN, onMS, offMS);
-            if (!!blue)
-                rc |= set_rgb_led_timer_trigger(LED_BLUE, onMS, offMS);
             /* fallback to constant on if timed blinking is not supported */
             if (rc == 0)
                 break;
