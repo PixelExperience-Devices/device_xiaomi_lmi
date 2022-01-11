@@ -274,18 +274,18 @@ public class PopupCameraService extends Service implements Handler.Callback {
                 Integer.parseInt(mPopupCameraPreferences.getLEDColor());
             if(ledColor >= 4)
             {
-                FileUtils.writeLine(Constants.RED_LED_PATH, "255");
-                FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "255");
+                FileUtils.writeLine(Constants.RED_LED_PATH, "1");
+                FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "1");
             }
             if((ledColor == 2) || (ledColor == 3) || (ledColor >=6))
             {
-                FileUtils.writeLine(Constants.GREEN_LED_PATH, "255");
-                FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "255");
+                FileUtils.writeLine(Constants.GREEN_LED_PATH, "1");
+                FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "1");
             }
             if((ledColor & 1) == 1)
             {
-                FileUtils.writeLine(Constants.BLUE_LED_PATH, "255");
-                FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "255");
+                FileUtils.writeLine(Constants.BLUE_LED_PATH, "1");
+                FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "1");
             }
 
             mHandler.postDelayed(() -> {
@@ -295,7 +295,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
                 FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "0");
                 FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "0");
                 FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "0");
-            }, 1200);
+            }, 2300);
         }
     }
 
