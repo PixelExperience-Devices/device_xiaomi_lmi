@@ -945,7 +945,7 @@ function configure_memory_parameters() {
     # Set allocstall_threshold to 0 for all targets.
     #
 
-ProductName=`getprop ro.product.name`
+ProductName=`getprop ro.board.platform`
 low_ram=`getprop ro.config.low_ram`
 
 if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ]; then
