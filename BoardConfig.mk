@@ -45,7 +45,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
-TARGET_KERNEL_CONFIG := lmi_defconfig
+TARGET_KERNEL_CONFIG := vendor/lmi_user_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := kona
