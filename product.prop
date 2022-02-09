@@ -12,7 +12,7 @@ ro.af.client_heap_size_kbyte=7168
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Pixel Mask
-ro.build.fingerprint=google/raven/raven:12/SQ1D.220105.007/8030436:user/release-keys
+ro.build.fingerprint=google/raven/raven:12/SQ1D.220205.003/8069835:user/release-keys
 ro.product.brand=google
 ro.product.device=raven
 ro.product.manufacturer=Google
