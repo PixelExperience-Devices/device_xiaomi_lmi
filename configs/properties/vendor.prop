@@ -119,7 +119,6 @@ persist.camera.gyro.disable=0
 persist.vendor.cne.feature=1
 
 # Crypto
-ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dalvik dex2oat
