@@ -23,8 +23,7 @@ The Redmi K30 Pro / POCO F2 Pro (codenamed _"lmi"_) is a flagship smartphone fro
 
 ## Device picture
 
-![Redmi K30 Pro / POCO F2 Pro](https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/46f95bd552fa134820a7daea19e507ef.png)
-
+![1-100](https://user-images.githubusercontent.com/48398952/158439045-0537dabf-14ed-4386-89e2-2437bf032125.png)
 
 ## Copyright
 
