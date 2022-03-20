@@ -545,7 +545,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
 # Display Calibration
-vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml|0fb211bd5e5d5152e5f708c50054ce261e5ea061
 
 # Display Postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
