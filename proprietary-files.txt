@@ -1532,7 +1532,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Vibrator Firmware
-vendor/firmware/aw8697_haptic.bin
+vendor/firmware/aw8697_haptic.bin|37721cb00ef2e50e6051de104605c061c9ef5f90
 vendor/firmware/aw8697_rtp_1.bin
 
 # WiFi
