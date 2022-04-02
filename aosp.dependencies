@@ -7,19 +7,19 @@
   },
   {
     "repository": "device_xiaomi_lmi",
-    "target_path": "device/xiaomi/lmi"
+    "target_path": "device/xiaomi/lmi",
     "remote"      : "pixel-devices",
     "branch"      : "twelve"
   },
   {
     "repository": "kernel_xiaomi_lmi",
-    "target_path": "kernel/xiaomi/lmi"
+    "target_path": "kernel/xiaomi/lmi",
     "remote"      : "pixel-devices",
     "branch"      : "twelve"
   },
   {
     "repository": "vendor_xiaomi_lmi",
-    "target_path": "vendor/xiaomi/lmi"
+    "target_path": "vendor/xiaomi/lmi",
     "remote"      : "pixel-devices-blobs",
     "branch"      : "twelve"
   }
