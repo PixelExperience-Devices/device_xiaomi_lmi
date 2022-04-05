@@ -13,7 +13,6 @@ ro.charger.enable_suspend=1
 persist.vendor.cne.feature=1
 
 # Display
-debug.sf.disable_backpressure=1
 qemu.sf.lcd_density=440
 
 # Graphics
