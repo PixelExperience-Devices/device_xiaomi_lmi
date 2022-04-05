@@ -2,9 +2,6 @@ allow vendor_init block_device:lnk_file setattr;
 
 allow init property_type:file { append create getattr map open read relabelto rename setattr unlink write };
 
-# Allow vendor_init to set persist_camera_prop
-set_prop(vendor_init, vendor_persist_camera_prop)
-
 # Allow init to read and write to vendor_sysfs_graphics
 allow init vendor_sysfs_graphics:dir search;
 allow init vendor_sysfs_graphics:file rw_file_perms;
