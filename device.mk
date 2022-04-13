@@ -273,7 +273,6 @@ PRODUCT_PACKAGES += \
     WifiResTarget
 
 # Partitions
-PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Parts
