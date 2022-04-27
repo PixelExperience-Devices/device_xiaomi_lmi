@@ -362,10 +362,6 @@ PRODUCT_PACKAGES += \
     privapp-permissions-qti.xml \
     qti_whitelist.xml
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
