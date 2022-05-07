@@ -34,7 +34,6 @@ cc_binary {
         "aidl/PowerExt.cpp",
         "aidl/PowerHintSession.cpp",
         "aidl/PowerSessionManager.cpp",
-        "disp-power/DisplayLowPower.cpp",
         "disp-power/InteractionHandler.cpp",
     ],
 }
