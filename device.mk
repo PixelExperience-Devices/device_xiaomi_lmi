@@ -51,7 +51,8 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libtinycompress \
     libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.kona
 
 PRODUCT_PACKAGES += \
     audio_effects.xml \
