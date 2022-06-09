@@ -2,6 +2,9 @@
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 
+# Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+
 # Camera
 persist.camera.gyro.disable=0
 persist.vendor.camera.privapp.list=com.android.camera
