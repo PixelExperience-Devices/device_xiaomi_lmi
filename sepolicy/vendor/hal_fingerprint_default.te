@@ -1,9 +1,12 @@
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+
 hal_client_domain(hal_fingerprint_default, hal_touchfeature)
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
 
 binder_call(hal_fingerprint_default, hal_touchfeature_default)
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
+# Allow fingerprint HAL to create files in /data/vendor/fingerprint/
 allow hal_fingerprint_default fingerprint_data_file:dir create_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
 
