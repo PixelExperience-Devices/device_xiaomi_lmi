@@ -85,6 +85,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
+        androidboot.fstab_suffix=qcom \
 	androidboot.hardware=qcom \
 	androidboot.memcg=1 \
 	androidboot.usbcontroller=a600000.dwc3 \
