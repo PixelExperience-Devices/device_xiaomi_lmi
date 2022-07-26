@@ -15,4 +15,4 @@ allow mlipay_app activity_service:service_manager find;
 r_dir_file(mlipay_app, firmware_file)
 set_prop(mlipay_app, vendor_mlipay_prop);
 
-get_prop(mlipay_app, vendor_fp_prop)
+get_prop(mlipay_app, vendor_fingerprint_prop)
