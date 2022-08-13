@@ -233,6 +233,9 @@ ro.soc.model=SM8250
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # Vulkan
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
