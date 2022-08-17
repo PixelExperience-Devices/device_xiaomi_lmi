@@ -69,3 +69,9 @@ prebuilt_etc {
     src: "sound_trigger_platform_info.xml",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "usbv2_audio_policy_configuration.xml",
+    src: "usbv2_audio_policy_configuration.xml",
+    vendor: true,
+}
