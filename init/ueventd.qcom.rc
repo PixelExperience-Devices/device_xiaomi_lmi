@@ -499,3 +499,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # socinfo
 /sys/devices/soc0           serial_number            0000    root    root
+
+# HBM
+/sys/class/drm/card0/card0-DSI-1                        disp_param                      0666    system  system
