@@ -18,9 +18,6 @@
 /dev/ti-drv8846                                                 u:object_r:motor_device:s0
 /dev/xiaomi-touch                                               u:object_r:touchfeature_device:s0
 
-# EFS
-/dev/block/sde[0-9]                                             u:object_r:efs_block_device:s0
-
 # Fingerprint data
 /data/vendor/fpc(/.*)?                                      u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                   u:object_r:fingerprint_vendor_data_file:s0
@@ -52,6 +49,9 @@
 # MAC
 /vendor/bin/nv_mac                                              u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                     u:object_r:vendor_wifi_vendor_data_file:s0
+
+# MSADP partition
+/dev/block/platform/soc/1d84000.ufshc/by-name/msadp         u:object_r:vendor_efs_boot_dev:s0
 
 # Thermal
 /vendor/bin/mi_thermald                                         u:object_r:mi_thermald_exec:s0
