@@ -60,3 +60,6 @@ genfscon sysfs /devices/virtual/diag/diag/wakeup                                
 # Extcon sysfs
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon          u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/extcon               u:object_r:sysfs_extcon:s0
+
+# Fastcharge
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/usb/fastcharge_mode            u:object_r:vendor_sysfs_usb_supply:s0
