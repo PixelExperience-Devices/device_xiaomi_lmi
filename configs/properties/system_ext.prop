@@ -4,6 +4,9 @@ vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
 # DPM
 persist.vendor.dpm.feature=1
 
+# Display
+debug.sf.enable_hwc_vds=1
+
 # GPS
 persist.sys.gps.fence=true
 persist.sys.gps.polaris=true
