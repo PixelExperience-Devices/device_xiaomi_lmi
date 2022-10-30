@@ -14,4 +14,5 @@ prebuilt_etc {
     name: "qti_whitelist.xml",
     sub_dir: "sysconfig",
     src: "qti_whitelist.xml",
+    system_ext_specific: true,
 }
