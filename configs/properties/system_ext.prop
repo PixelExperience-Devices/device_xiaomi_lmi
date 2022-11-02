@@ -1,6 +1,3 @@
-# Camera
-vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
-
 # DPM
 persist.vendor.dpm.feature=1
 
