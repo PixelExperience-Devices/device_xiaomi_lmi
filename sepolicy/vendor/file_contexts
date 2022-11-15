@@ -18,6 +18,9 @@
 /dev/ti-drv8846                                                 u:object_r:motor_device:s0
 /dev/xiaomi-touch                                               u:object_r:touchfeature_device:s0
 
+# Fingerprint
+/sys/touchpanel/fp_state                                        u:object_r:vendor_sysfs_sensors:s0
+
 # Fingerprint data
 /data/vendor/fpc(/.*)?                                      u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                   u:object_r:fingerprint_vendor_data_file:s0
