@@ -1,0 +1,5 @@
+service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti.xiaomi_lmi
+    class hal
+    user system
+    group system
+    shutdown critical
