@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
     audio_io_policy.conf \
     audio_platform_info_intcodec.xml \
     audio_policy_configuration.xml \
-    audio_policy_configuration_a2dp_offload_disabled.xml \
     audio_policy_volumes.xml \
     audio_tuning_mixer.txt \
     mixer_paths.xml \
@@ -57,10 +56,6 @@ PRODUCT_PACKAGES += \
     mixer_paths_overlay_static.xml \
     sound_trigger_mixer_paths.xml \
     sound_trigger_platform_info.xml
-
-PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8250/audio/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    hardware/qcom-caf/sm8250/audio/configs/common/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
@@ -94,6 +89,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libpiex_shim
+
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-product.mk)

@@ -29,12 +29,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "audio_policy_configuration_a2dp_offload_disabled.xml",
-    src: "audio_policy_configuration_a2dp_offload_disabled.xml",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "audio_policy_volumes.xml",
     src: "audio_policy_volumes.xml",
     vendor: true,
