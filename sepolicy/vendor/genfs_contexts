@@ -4,6 +4,9 @@ genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value           
 # Battery sysfs
 genfscon sysfs /class/power_supply/battery/capacity                                                     u:object_r:vendor_sysfs_battery_supply:s0
 
+# Display dim layer Exposure
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure                                                         u:object_r:vendor_sysfs_graphics:s0
+
 # Display sysfs
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary                                       u:object_r:vendor_sysfs_graphics:s0
 
