@@ -1,0 +1,71 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+//
+
+prebuilt_etc {
+    name: "audio_effects.xml",
+    src: "audio_effects.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_io_policy.conf",
+    src: "audio_io_policy.conf",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_platform_info_intcodec.xml",
+    src: "audio_platform_info_intcodec.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_policy_configuration.xml",
+    src: "audio_policy_configuration.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_policy_volumes.xml",
+    src: "audio_policy_volumes.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "audio_tuning_mixer.txt",
+    src: "audio_tuning_mixer.txt",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths.xml",
+    src: "mixer_paths.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths_overlay_dynamic.xml",
+    src: "mixer_paths_overlay_dynamic.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths_overlay_static.xml",
+    src: "mixer_paths_overlay_static.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "sound_trigger_mixer_paths.xml",
+    src: "sound_trigger_mixer_paths.xml",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "sound_trigger_platform_info.xml",
+    src: "sound_trigger_platform_info.xml",
+    vendor: true,
+}

@@ -29,6 +29,25 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.soundtrigger@2.3-impl
 
+PRODUCT_PACKAGES += \
+    audio_effects.xml \
+    audio_io_policy.conf \
+    audio_platform_info_intcodec.xml \
+    audio_policy_configuration.xml \
+    audio_policy_volumes.xml \
+    audio_tuning_mixer.txt \
+    mixer_paths.xml \
+    mixer_paths_overlay_dynamic.xml \
+    mixer_paths_overlay_static.xml \
+    sound_trigger_mixer_paths.xml \
+    sound_trigger_platform_info.xml
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
