@@ -88,6 +88,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.ramdisk \
+    init.qti.dcvs.sh \
+    init.target.rc
 
 # IR
 PRODUCT_PACKAGES += \
