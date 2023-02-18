@@ -208,6 +208,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     public.libraries.txt
 
+# NFC
+PRODUCT_PACKAGES += \
+    libnfc-nci.conf \
+    libnfc-nxp.conf
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
