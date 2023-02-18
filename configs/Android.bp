@@ -5,6 +5,12 @@
 //
 
 prebuilt_etc {
+    name: "public.libraries.txt",
+    src: "public.libraries.txt",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "sec_config",
     src: "sec_config",
     vendor: true,
