@@ -5,6 +5,12 @@
 //
 
 prebuilt_etc {
+    name: "privapp-permissions-qti.xml",
+    sub_dir: "permissions",
+    src: "privapp-permissions-qti.xml",
+}
+
+prebuilt_etc {
     name: "qti_whitelist.xml",
     sub_dir: "sysconfig",
     src: "qti_whitelist.xml",

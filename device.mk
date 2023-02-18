@@ -131,6 +131,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 PRODUCT_PACKAGES += \
+    privapp-permissions-qti.xml \
     qti_whitelist.xml
 
 # RenderScript
