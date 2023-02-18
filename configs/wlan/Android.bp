@@ -1,0 +1,26 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+//
+
+prebuilt_etc {
+    name: "p2p_supplicant_overlay.conf",
+    src: "p2p_supplicant_overlay.conf",
+    sub_dir: "wifi",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "WCNSS_qcom_cfg.ini",
+    src: "WCNSS_qcom_cfg.ini",
+    sub_dir: "wifi/qca6390",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "wpa_supplicant_overlay.conf",
+    src: "wpa_supplicant_overlay.conf",
+    sub_dir: "wifi",
+    vendor: true,
+}

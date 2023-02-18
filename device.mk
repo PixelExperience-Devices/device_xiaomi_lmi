@@ -153,3 +153,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
+
+PRODUCT_PACKAGES += \
+    p2p_supplicant_overlay.conf \
+    WCNSS_qcom_cfg.ini \
+    wpa_supplicant_overlay.conf
