@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+//
+
+prebuilt_etc {
+    name: "sec_config",
+    src: "sec_config",
+    vendor: true,
+}
