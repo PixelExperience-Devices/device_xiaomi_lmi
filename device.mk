@@ -14,6 +14,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Atrace
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
