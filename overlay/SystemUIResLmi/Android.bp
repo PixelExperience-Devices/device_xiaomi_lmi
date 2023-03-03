@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiResCommon",
-    product_specific: true,
+    name: "SystemUIResLmi",
+    device_specific: true,
 }

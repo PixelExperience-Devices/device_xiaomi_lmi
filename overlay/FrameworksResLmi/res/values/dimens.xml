@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021 The LineageOS Project
+     Copyright (C) 2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
-         calculate the status bar height. -->
-    <dimen name="status_bar_height_default">35dp</dimen>
-
-    <!-- Height of the status bar in portrait.
+    <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
+    <dimen name="status_bar_height_default">35dp</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
     <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
 
     <!-- Default radius of the software rounded corners. -->
