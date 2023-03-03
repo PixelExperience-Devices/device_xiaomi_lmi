@@ -168,6 +168,3 @@ telephony.lteOnCdmaDevice=1
 # SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8250
-
-# WiFi Display
-persist.sys.wfd.virtual=0

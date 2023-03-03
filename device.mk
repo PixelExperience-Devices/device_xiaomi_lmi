@@ -454,14 +454,3 @@ PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     WCNSS_qcom_cfg.ini \
     wpa_supplicant_overlay.conf
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libqdMetaData \
-    libnl \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
