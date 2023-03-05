@@ -856,6 +856,10 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# Lights
+vendor/lib/hw/lights.kona.so
+vendor/lib64/hw/lights.kona.so
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libadpcmdec.so
