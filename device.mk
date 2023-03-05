@@ -10,7 +10,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    fstab.ramdisk \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
