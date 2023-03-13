@@ -139,9 +139,6 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
-# Factory Reset Protection
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # FS-verity
 ro.apk_verity.mode=2
 
