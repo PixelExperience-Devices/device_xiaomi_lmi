@@ -15,9 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Ambient settings -->
-    <string name="ambient_enable">启用环境显示</string>
-
     <!-- Popup camera settings -->
     <string name="popup_title">前置摄像头设置</string>
     <string name="popup_led_title">摄像头 LED 灯</string>
