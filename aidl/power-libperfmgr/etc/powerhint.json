@@ -29,6 +29,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "CPULittleClusterGovernor",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor",
+      "Values": [
+        "schedutil",
+        "powersave"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
       "Values": [
@@ -56,6 +65,15 @@
         "1286400",
         "1747201",
         "710400"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterGovernor",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor",
+      "Values": [
+        "schedutil",
+        "powersave"
       ],
       "ResetOnInit": true
     },
@@ -88,6 +106,15 @@
         "844799",
         "960000",
         "844800"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigPlusClusterGovernor",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor",
+      "Values": [
+        "schedutil",
+        "powersave"
       ],
       "ResetOnInit": true
     },
@@ -380,6 +407,24 @@
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
       "Value": "2597"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPULittleClusterGovernor",
+      "Duration": 0,
+      "Value": "schedutil"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPUBigClusterGovernor",
+      "Duration": 0,
+      "Value": "schedutil"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPUBigPlusClusterGovernor",
+      "Duration": 0,
+      "Value": "schedutil"
     },
     {
       "PowerHint": "LAUNCH",
