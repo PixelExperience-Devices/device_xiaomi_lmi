@@ -1,3 +1,6 @@
+# f0_value sysfs file
+type sysfs_f0_value, sysfs_type, fs_type;
+
 # Files
 type audio_socket, file_type;
 type fingerprint_data_file, data_file_type, core_data_file_type, file_type;
