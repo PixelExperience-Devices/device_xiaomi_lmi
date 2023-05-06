@@ -104,6 +104,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+ro.hwui.render_ahead=10
 ro.vendor.display.sensortype=2
 vendor.display.comp_mask=2
 vendor.display.disable_excl_rect=0
