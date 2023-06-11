@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from V14.0.1.0.SJKCNXM.
+# All unpinned blobs are extracted from V14.0.5.0.SJKCNXM.
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
