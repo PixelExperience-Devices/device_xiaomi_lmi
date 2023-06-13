@@ -8,6 +8,9 @@
     <!-- Whether device has screen with higher aspect ratio. -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
+    <!-- Default value for notification LED customization -->
+    <bool name="def_notification_pulse_custom_enable">true</bool>
+
     <!-- Defines the actions shown in advanced reboot submenu -->
     <string-array name="config_restartActionsList">
         <item>restart</item>
