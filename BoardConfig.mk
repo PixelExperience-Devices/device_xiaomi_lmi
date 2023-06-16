@@ -96,6 +96,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
 TARGET_KERNEL_CONFIG := lmi_defconfig
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Media
 TARGET_USES_ION := true
 
