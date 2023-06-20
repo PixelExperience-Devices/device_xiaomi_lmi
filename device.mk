@@ -87,6 +87,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
+$(call inherit-product, vendor/xiaomi/lmi-miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
@@ -99,6 +101,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libpiex_shim
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=lmi_global
 
 # Component overrides
 PRODUCT_COPY_FILES += \
