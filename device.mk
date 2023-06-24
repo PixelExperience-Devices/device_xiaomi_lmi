@@ -393,6 +393,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
+# Prebuilt Apps
+PRODUCT_PACKAGES += \
+    CameraGo
+
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
