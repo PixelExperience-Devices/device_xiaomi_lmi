@@ -4,6 +4,16 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
+    <!-- Charging -->
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.micharge</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMiCharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Fingerprint -->
     <hal format="hidl" optional="true">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
