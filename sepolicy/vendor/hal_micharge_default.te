@@ -1,0 +1,34 @@
+type hal_micharge_default, domain;
+hal_server_domain(hal_micharge_default, hal_micharge)
+
+type hal_micharge_default_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_micharge_default)
+
+r_dir_file(hal_micharge_default, cgroup)
+r_dir_file(hal_micharge_default, mnt_vendor_file)
+r_dir_file(hal_micharge_default, vendor_sysfs_battery_supply)
+r_dir_file(hal_micharge_default, sysfs_batteryinfo)
+r_dir_file(hal_micharge_default, sysfs_type)
+r_dir_file(hal_micharge_default, vendor_sysfs_usb_supply)
+r_dir_file(hal_micharge_default, vendor_sysfs_usbpd_device)
+
+allow hal_micharge_default {
+  mnt_vendor_file
+}:dir rw_dir_perms;
+
+allow hal_micharge_default {
+  vendor_sysfs_battery_supply
+  sysfs_usb
+  vendor_sysfs_usb_supply
+  vendor_sysfs_usbpd_device
+}:file rw_file_perms;
+
+allow hal_micharge_default {
+  system_suspend_hwservice
+  hidl_manager_hwservice
+}:hwservice_manager find;
+
+binder_call(hal_micharge_default, system_suspend_server)
+
+wakelock_use(hal_micharge_default)
