@@ -36,3 +36,20 @@ rm clang-r475365b.tar.gz
 echo "Clone Device Custom Sepolicy"
 rm -rf device/custom/sepolicy
 git clone --depth=1 https://github.com/ZenkaBestia/elixir_device_custom_sepolicy device/custom/sepolicy
+
+########### extendrom section ###########
+#clone extendedrom if it doesnt exist
+if [ ! -d "vendor/extendrom" ]
+then
+git clone https://github.com/sfX-android/android_vendor_extendrom -b main vendor/extendrom
+fi
+
+# Enable extendrom
+export ENABLE_EXTENDROM=true
+
+#Boot Debug
+export EXTENDROM_BOOT_DEBUG=true
+
+mka aapt
+$PWD/vendor/extendrom/er.sh
+########### extendrom section ###########

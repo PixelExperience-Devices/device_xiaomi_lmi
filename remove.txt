@@ -4,3 +4,4 @@ vendor/xiaomi
 hardware/qcom-caf/sm8250
 hardware/lineage/compat
 device/custom/sepolicy
+vendor/extendrom
