@@ -53,6 +53,14 @@
     <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
     <bool name="config_wifi_only_link_same_credential_configurations" translatable="false">false</bool>
 
+    <!-- Integer thresholds, do not connect to APs with RSSI lower than these values  -->
+    <integer translatable="false" name="config_wifi_framework_wifi_score_entry_rssi_threshold_5GHz">-77</integer>
+    <integer translatable="false" name="config_wifi_framework_wifi_score_entry_rssi_threshold_24GHz">-80</integer>
+
+    <!-- Integer thresholds for low network score, should be somewhat less than the entry thresholds -->
+    <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-80</integer>
+    <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-83</integer>
+
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
     <bool name="config_wifi_softap_acs_supported" translatable="false">true</bool>
 
