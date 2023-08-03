@@ -16,3 +16,6 @@ git clone --depth=1 https://github.com/VoidUI-Tiramisu/hardware_qcom-caf_sm8250_
 
 echo 'Clone Lineage Compat Repo'
 git clone --depth=1 https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
+
+echo 'Clone MIUI Camera Repo'
+git clone --depth=1 https://github.com/ppooopppooo/vendor_xiaomi_lmi-miuicamera -b 13.0 vendor/xiaomi/lmi-miuicamera
