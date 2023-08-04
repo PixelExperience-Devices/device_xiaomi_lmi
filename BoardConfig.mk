@@ -91,7 +91,6 @@ BOARD_KERNEL_CMDLINE := \
 	androidboot.usbcontroller=a600000.dwc3 \
 	cgroup.memory=nokmem,nosocket \
 	loop.max_part=7 \
-	lpm_levels.sleep_disabled=1 \
 	msm_rtb.filter=0x237 \
 	reboot=panic_warm \
 	service_locator.enable=1 \
