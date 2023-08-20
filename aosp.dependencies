@@ -1,10 +1,26 @@
 [
   {
-    "repository": "android_vendor_xiaomi_lmi",
-    "target_path": "vendor/xiaomi/lmi"
-  }
+    "repository"  : "hardware_xiaomi",
+    "target_path" : "hardware/xiaomi",
+    "remote"      : "pixel",
+    "branch"      : "thirteen"
+  },
   {
-    "repository": "android_kernel_xiaomi_lmi",
-    "target_path": "kernel/xiaomi/lmi"
+    "repository": "device_xiaomi_lmi",
+    "target_path": "device/xiaomi/lmi",
+    "remote"      : "pixel-devices",
+    "branch"      : "thirteen"
+  },
+  {
+    "repository": "kernel_xiaomi_lmi",
+    "target_path": "kernel/xiaomi/lmi",
+    "remote"      : "pixel-devices",
+    "branch"      : "thirteen"
+  },
+  {
+    "repository": "vendor_xiaomi_lmi",
+    "target_path": "vendor/xiaomi/lmi",
+    "remote"      : "pixel-devices-blobs",
+    "branch"      : "thirteen"
   }
 ]
