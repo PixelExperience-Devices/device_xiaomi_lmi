@@ -19,6 +19,9 @@ qemu.sf.lcd_density=440
 # Feature flags
 persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# FEAS
+ro.feas.enable=true
+
 # Graphics
 persist.demo.hdmirotationlock=false
 

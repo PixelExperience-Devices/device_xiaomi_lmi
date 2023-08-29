@@ -10,6 +10,10 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_expos
 # Display sysfs
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary                                       u:object_r:vendor_sysfs_graphics:s0
 
+# FEAS
+genfscon sysfs /module/perfmgr                        u:object_r:sysfs_perfmgr:s0
+genfscon proc /perfmgr                                u:object_r:proc_perfmgr:s0
+
 # Xiaomi power supply sysfs
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-standalone                                         u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply/charge_pump_master u:object_r:vendor_sysfs_battery_supply:s0
