@@ -387,8 +387,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Power
+TARGET_BOARD_PLATFORM := kona
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/power/config/$(TARGET_BOARD_PLATFORM)/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
 
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
