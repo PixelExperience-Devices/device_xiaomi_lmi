@@ -29,6 +29,9 @@ genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-5/5-0055/power_supply/bms_ma
 genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-7/7-0055/power_supply/bms_master                                                 u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                                                      u:object_r:vendor_sysfs_battery_supply:s0
 
+# Touchpanel
+genfscon sysfs /touchpanel                                                      u:object_r:sysfs_touchpanel:s0
+
 # Touchscreen sysfs
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a                            u:object_r:vendor_sysfs_touch:s0
 genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-3/3-0049                            u:object_r:vendor_sysfs_touch:s0
