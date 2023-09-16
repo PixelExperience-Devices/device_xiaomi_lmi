@@ -8,6 +8,7 @@ genfscon sysfs /class/power_supply/battery/capacity                             
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure                                                         u:object_r:vendor_sysfs_graphics:s0
 
 # Display sysfs
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                                               u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary                                       u:object_r:vendor_sysfs_graphics:s0
 
 # FEAS
