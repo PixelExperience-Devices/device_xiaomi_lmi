@@ -82,13 +82,16 @@ void vendor_load_properties() {
         if (product == "pro") {
             set_device_props(
                 "Redmi", "lmipro", "Redmi K30 Pro Zoom Edition");
+	    property_override("ro.boot.hardware.sku", "pro");
         } else {
             set_device_props(
                 "Redmi", "lmi", "Redmi K30 Pro");
+	    property_override("ro.boot.hardware.sku", "std");
         }
     } else {
         set_device_props(
             "POCO", "lmi", "POCO F2 Pro");
+        property_override("ro.boot.hardware.sku", "std");
     }
 
     load_dalvik_properties();
