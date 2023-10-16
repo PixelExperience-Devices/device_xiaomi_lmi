@@ -4,7 +4,7 @@ git clone --depth=1 https://github.com/ProjectElixir-Devices/kernel_xiaomi_lmi.g
 
 echo 'Cloning Vendor Tree'
 # Vendor Tree
-git clone --depth=1 https://github.com/ProjectElixir-Devices/vendor_xiaomi_lmi.git -b Tiramisu vendor/xiaomi/lmi
+git clone --depth=1 https://github.com/ProjectElixir-Devices/vendor_xiaomi_lmi.git -b UDC vendor/xiaomi/lmi
 
 echo 'Clone Prebuilt Apps Repo'
 # Prebuilt Apps
