@@ -1,5 +1,5 @@
 device/xiaomi
 kernel/xiaomi
 vendor/xiaomi
-hardware/qcom-caf/sm8250/audio
+hardware/qcom-caf/sm8250
 hardware/lineage/compat
