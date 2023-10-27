@@ -919,6 +919,12 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# Protobuff - from munch V14.0.5.0.TLMCNXM
+vendor/lib/libprotobuf-cpp-full-3.9.1.so|3247396cc6262eeff1ea3773a84a31040eb6cebc
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so|8a6144dc72693eb55ae0be50484c316f676ff147
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so|68ed446d0690ee4871ca3522c63d426d3c798514
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|a59cadc480fe326044552f5930196f8970f6fbd1
+
 # Lights
 vendor/lib/hw/lights.kona.so
 vendor/lib64/hw/lights.kona.so
