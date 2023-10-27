@@ -32,3 +32,7 @@ wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+a
 mkdir prebuilts/clang/host/linux-x86/clang-r475365b
 tar -xvf clang-r475365b.tar.gz -C prebuilts/clang/host/linux-x86/clang-r475365b
 rm clang-r475365b.tar.gz
+
+echo "Clone Device Custom Sepolicy"
+rm -rf device/custom/sepolicy
+git clone --depth=1 https://github.com/ZenkaBestia/elixir_device_custom_sepolicy device/custom/sepolicy
