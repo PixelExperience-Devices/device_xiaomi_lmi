@@ -10,16 +10,9 @@ echo 'Clone Prebuilt Apps Repo'
 # Prebuilt Apps
 git clone --depth=1 https://gitlab.com/ZenkaBestia/device_xiaomi_lmi_prebuilt-apps -b main device/xiaomi/lmi-prebuilt-apps
 
-echo 'Clone HALs Repo'
+echo 'Clone Audio Hal Repo'
 # Audio
-rm -rf hardware/qcom-caf/sm8250/audio
-git clone --depth=1 https://github.com/DerpFest-AOSP/hardware_qcom_audio -b 14-caf-sm8250 hardware/qcom-caf/sm8250/audio
-# Media
-rm -rf hardware/qcom-caf/sm8250/media
-git clone --depth=1 https://github.com/DerpFest-AOSP/hardware_qcom_media -b 14-caf-sm8250 hardware/qcom-caf/sm8250/media
-# Display
-rm -rf hardware/qcom-caf/sm8250/display
-git clone --depth=1 https://github.com/DerpFest-AOSP/hardware_qcom_display -b 14-caf-sm8250 hardware/qcom-caf/sm8250/display
+git clone --depth=1 https://github.com/VoidUI-Tiramisu/hardware_qcom-caf_sm8250_audio -b aosp-13 hardware/qcom-caf/sm8250/audio
 
 echo 'Clone Lineage Compat Repo'
 git clone --depth=1 https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
