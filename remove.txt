@@ -1,6 +1,7 @@
 device/xiaomi
 kernel/xiaomi
 vendor/xiaomi
+vendor/xiaomi/lmi-miuicamera
 hardware/qcom-caf/sm8250/audio
 hardware/lineage/compat
 device/custom/sepolicy

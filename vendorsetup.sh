@@ -25,7 +25,8 @@ echo 'Clone Lineage Compat Repo'
 git clone --depth=1 https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
 
 echo 'Clone MIUI Camera Repo'
-git clone --depth=1 https://github.com/ppooopppooo/vendor_xiaomi_lmi-miuicamera -b 13.0 vendor/xiaomi/lmi-miuicamera
+rm -rf vendor/xiaomi/lmi-miuicamera
+git clone --depth=1 https://github.com/ZenkaBestia/vendor_xiaomi_lmi-miuicamera -b 14.0 vendor/xiaomi/lmi-miuicamera
 
 echo "Download AOSP Clang 16.0.2"
 wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r475365b.tar.gz
