@@ -87,6 +87,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
 BOARD_KERNEL_CMDLINE := \
         androidboot.fstab_suffix=qcom \
 	androidboot.hardware=qcom \
+        androidboot.init_fatal_reboot_target=recovery \
 	androidboot.memcg=1 \
 	androidboot.usbcontroller=a600000.dwc3 \
 	cgroup.memory=nokmem,nosocket \
