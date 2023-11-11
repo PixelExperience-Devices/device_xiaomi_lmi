@@ -37,3 +37,12 @@ rm clang-r475365b.tar.gz
 echo "Clone Device Custom Sepolicy"
 rm -rf device/custom/sepolicy
 git clone --depth=1 https://github.com/ZenkaBestia/elixir_device_custom_sepolicy device/custom/sepolicy
+
+# Patch
+echo "Patch for MIUI Camera"
+cd frameworks/av
+wget https://raw.githubusercontent.com/ZenkaBestia/elixir_frameworks_av/patch/Import-Xiaomi-Modifications-for-vendor-tag.patch && patch -p1 < *.patch && cd -
+cd vendor/aosp
+wget https://raw.githubusercontent.com/ZenkaBestia/elixir_vendor_aosp/patch/Add-TARGET_INCLUDES_MIUI_CAMERA.patch
+wget https://raw.githubusercontent.com/ZenkaBestia/elixir_vendor_aosp/patch/Hookup-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED.patch
+patch -p1 < *.patch && cd -
