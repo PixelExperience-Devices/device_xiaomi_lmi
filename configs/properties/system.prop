@@ -50,6 +50,9 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mm.enable.smoothstreaming=true
 ro.media.recorder-max-base-layer-fps=60
 
+# MultiGen LRU
+persist.device_config.mglru_native.lru_gen_config=all
+
 # Netmgr
 persist.data.df.dev_name=rmnet_usb0
 persist.data.netmgrd.qos.enable=true
