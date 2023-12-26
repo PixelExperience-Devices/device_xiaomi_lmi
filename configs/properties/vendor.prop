@@ -119,7 +119,7 @@ vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 
 # Dolby
-vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.enabled=true
 vendor.audio.dolby.ds2.hardbypass=false
 ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 ro.vendor.product.device.db=OP_DEVICE
