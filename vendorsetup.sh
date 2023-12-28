@@ -22,7 +22,7 @@ rm -rf hardware/qcom-caf/sm8250/display
 git clone --depth=1 https://github.com/LineageOS/android_hardware_qcom_display -b lineage-21.0-caf-sm8250 hardware/qcom-caf/sm8250/display
 
 echo 'Clone Lineage Compat Repo'
-git clone --depth=1 https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
+git clone --depth=1 https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-21.0 hardware/lineage/compat
 
 echo 'Clone MIUI Camera Repo'
 git clone --depth=1 https://gitlab.com/ZenkaBestia/vendor_xiaomi_lmi-miuicamera.git -b 14.0 vendor/xiaomi/lmi-miuicamera
