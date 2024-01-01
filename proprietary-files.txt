@@ -797,38 +797,52 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Graphics - from LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
+vendor/lib/libC2D2.so|1c89e545a5dabc94d27db32031594a792d91d6fd
+vendor/lib/libc2d30_bltlib.so|d7fa7e3bebe7363a34d1757639ae19cbd8287670
+vendor/lib/libVkLayer_q3dtools.so|fdd571695a749ac0ed92990504b1fdd50688874c
+vendor/lib64/libC2D2.so|0b4aa67ef7e86df61a1bfd7dfd4680e0f0d7104c
+vendor/lib64/libc2d30_bltlib.so|87f3a78b5af703c546400b2cfee4a69782e7343b
+vendor/lib64/libVkLayer_q3dtools.so|7e3131cdaaefdcde518fccc1de49fe06653b9b73
+
+# Graphics (Adreno) - from Oneplus 12 qssi-user.14.UKQ1.230924.001-1703000958888
 vendor/lib/egl/eglSubDriverAndroid.so|c4133b15d0a36f0775418724e09ce76681baa16d
 vendor/lib/egl/libEGL_adreno.so|f38599ec0912a69a249a92b1e9c0b988400cf341
 vendor/lib/egl/libGLESv1_CM_adreno.so|5ab7196d4c8ae861ff484cb6b1f4b5ac3c9738b4
 vendor/lib/egl/libGLESv2_adreno.so|c172a08593618b0ab33862a805e83ee1d18329bc
 vendor/lib/egl/libq3dtools_adreno.so|994551fb9b829caf80bb7a8f84b4b89cb3104ed9
 vendor/lib/egl/libq3dtools_esx.so|db92011d835f0b229c77210a54a56d7e26ed0bf3
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|31b237d1dfc4fcdc45569fff3983faec8672eb5b
+vendor/lib/libadreno_app_profiles.so|a8852a9a2bf934401f0d0c4d7b79687dad3a100e
 vendor/lib/libadreno_utils.so|57411f42a5426334c8410a2ed6674c0634aaa7f4
-vendor/lib/libC2D2.so|1c89e545a5dabc94d27db32031594a792d91d6fd
-vendor/lib/libc2d30_bltlib.so|d7fa7e3bebe7363a34d1757639ae19cbd8287670
 vendor/lib/libCB.so|7cc1c0523ce4187559ac260a9c05c9c183e59742
 vendor/lib/libgpudataproducer.so|a0313e0467055f848763dafc1ea9cae82e3b81a2
 vendor/lib/libgsl.so|b1c13ba071c85cf803caab1393ed0a76a9c530b8
+vendor/lib/libkcl.so|92e403c7e1292c0887846207f1a83950b4d66aca
+vendor/lib/libkernelmanager.so|ab52b549ceba434ef8db863b133581968f63aa97
 vendor/lib/libllvm-glnext.so|20b0c962b870e37e69ad83d0d11ddd7e7b2fe07e
 vendor/lib/libllvm-qcom.so|040954cc982da87731d005ae00a38f49801fa213
+vendor/lib/libllvm-qgl.so|00efcd2bb9188850094288bb54ae33f85fd3bc87
 vendor/lib/libOpenCL.so|d5642e23207996dbbc13273927127ecf04fced53
-vendor/lib/libVkLayer_q3dtools.so|fdd571695a749ac0ed92990504b1fdd50688874c
+vendor/lib/libOpenCL_adreno.so|56036b608eeb19caa98eaf9cc79ff2f5cbacdae7
 vendor/lib64/egl/eglSubDriverAndroid.so|2692fd8aac6a9fd49faace2213b2631f7595afad
 vendor/lib64/egl/libEGL_adreno.so|213c6b8f1ff131f11e3f0f1d8aec8aaf39b0ed1a
 vendor/lib64/egl/libGLESv1_CM_adreno.so|b9e14710b9c2be024e1fdf77d60266423e484047
 vendor/lib64/egl/libGLESv2_adreno.so|d4160fde27ebae0724c0fcce4b6aea52c0045466
 vendor/lib64/egl/libq3dtools_adreno.so|172810bc218ab55fe95f628ab1c0d37833eb0021
 vendor/lib64/egl/libq3dtools_esx.so|461ff5fcd27c3329b87f202fe3bfff8689446871
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|86cec83a45ce6f9dbba6e2400670f6b790866885
+vendor/lib64/libadreno_app_profiles.so|e40e50eda680458a6016b71f4c00ec8a891ae9cf
 vendor/lib64/libadreno_utils.so|e41f005a2d428e59743352bbc14c2fb3c088dde1
-vendor/lib64/libC2D2.so|0b4aa67ef7e86df61a1bfd7dfd4680e0f0d7104c
-vendor/lib64/libc2d30_bltlib.so|87f3a78b5af703c546400b2cfee4a69782e7343b
 vendor/lib64/libCB.so|8b3e3e3e8e9d766c5ab7acb17635d7c90d51d6cd
 vendor/lib64/libgpudataproducer.so|0761bed6dbefc59d1ed77e7a3804e70944854689
 vendor/lib64/libgsl.so|2eff85c0a2c6df4a8c07002e9feb14c510e3f11a
+vendor/lib64/libkcl.so|46eec919d334353c3c40e8eb5932a63dd1397806
+vendor/lib64/libkernelmanager.so|e4630d1b64c04a898b2e42e2842774780f0a383e
 vendor/lib64/libllvm-glnext.so|de75e9c020c8a0b07cf7873d72cd3ec3223b74ef
 vendor/lib64/libllvm-qcom.so|cc4be65b93128742f5ee9bec9cbf4ad65a88fa1d
+vendor/lib64/libllvm-qgl.so|23125100391b2fbcbd22068f1ba7f9887ce75404
 vendor/lib64/libOpenCL.so|76d6d5f9e89d896665fdd06cbede3e21c92c8068
-vendor/lib64/libVkLayer_q3dtools.so|7e3131cdaaefdcde518fccc1de49fe06653b9b73
+vendor/lib64/libOpenCL_adreno.so|4ab8b26094374e2e048db90fe8f3a463f0b9b780
 
 # Graphics (HDR) - from LA.UM.9.12.r1-14400-SMxx50.0
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
@@ -843,9 +857,9 @@ vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
 vendor/lib64/libsdmextension.so|a42d6e9bd2b3cd08bffcf92ccd4084ffe6fbd28f
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
-# Graphics (Vulkan) - from LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
-vendor/lib/hw/vulkan.adreno.so|d59d50dcad5e3113fca1c95ab73dfcd265c23c66
-vendor/lib64/hw/vulkan.adreno.so|0388f3fd852c1fb1d90230c48b6abe3058897be8
+# Graphics (Vulkan) - from OnePlus 12 qssi-user.14.UKQ1.230924.001-1703000958888
+vendor/lib/hw/vulkan.adreno.so|f03736374601d812ad2ec273d5d920dd19960558
+vendor/lib64/hw/vulkan.adreno.so|4fa6918cb0f2114fe24f34e3de8254253d825597
 
 # Graphics Firmware
 vendor/firmware/a615_zap.b00
