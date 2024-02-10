@@ -17,6 +17,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit some common Project Elixir stuff.
 ELIXIR_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
+FORCE_LAWNCHAIR := true
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
